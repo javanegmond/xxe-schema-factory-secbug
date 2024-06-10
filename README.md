@@ -7,6 +7,6 @@ mvn compile
 mvn spotbugs:spotbugs
 ```
 
-Observe in target/spotbugsXml.xml that there's exactly 1 bug with `type='XXE_SCHEMA_FACTORY'`.
+Observe in target/spotbugsXml.xml that there's exactly 2 bugs with `type='XXE_SCHEMA_FACTORY'`.
 
-Note that this bug occurs in SchemaCreatorWithSeparateMethod.java, but not in SchemaCreatorInlined.
+Note that this bug occurs in SchemaCreatorCreateAndConfigureInSeparateMethod.java and SchemaCreatorConfigureInSeparateMethod.java, but not in SchemaCreatorInlined.java.
